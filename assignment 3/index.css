@@ -1,0 +1,94 @@
+
+body {
+  width: 1640px;
+  height: 1170px;
+  top: -139px;
+  left: -101px;
+  background: #F5F8FA;
+
+
+}
+/*Styling the form*/
+form {
+  width: 835px;
+  height: 795px;
+  top: 186px;
+  left: 262px;
+  margin-top: 10%;
+  margin-left: 20%;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px 0px #0000000d;
+  box-shadow: 0px 15px 35px 0px #2b404e18;
+}
+ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  width: 30%;
+  margin-top: -6%;
+  margin-left: 800px;
+ }
+ .flex-container {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin-top:2% ;
+  margin-left:2%;
+  margin-right: 20%;
+  
+}
+
+legend{
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.1599999964237213px;
+  margin-top: 10%;
+  margin-left: 65px;
+  color: #1D2C3C;
+
+}
+a{
+  color: #1e3063;
+ }
+header {
+  display: flex;
+  flex-direction: row;
+  width: 1570px;
+  height: 40px;
+}
+h2{
+  margin-left: 6%;
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #230e6e;
+  }
+ol{
+  list-style-type:circle;
+  
+}
+/*flex display*/
+input {
+  width: 238px;
+  height: 48px;
+  top: 24px;
+}
+/**/
+button{
+  width: 483px;
+  height: 52px;
+  top: 788px;
+  left: 311px;
+  margin-left: 85px;
+  margin-top: 20px;
+  background: #038E7D;
+
+}
+p{
+  margin-left: 9%;
+}

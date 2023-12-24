@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+    <link href="/assignment 3/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <!--Inline and External-->
+    <header class="blue-bg" style="margin-left: 200px;">
+      <div class="nav scrolling" id="sandwich-nav">
+        <img src="./assests/images/Nav bar.png" class="logo" />
+        <ul>
+          <a href="https://wppusher.com/download/" rel="nofollow">Download</a>
+          /
+
+          <a href="https://wppusher.com/features/">Learn more</a>
+
+          /
+          <a href="https://wppusher.com/#pricing">Pricing</a>
+
+          /
+          <a href="https://wppusher.com/support/">Help</a>
+        </ul>
+      </div>
+      <hr>
+    </header>
+      <hr>
+    <main>
+     <form method="POST" action="https://dashboard.wppusher.com/checkout" id="payment-form">
+      <h2 style="margin-top: 5%;">Checkout</h2>
+        <legend>Your Basic Information</legend>
+      <section class="flex-container">
+        <div>
+              <label for="first-name" class="ant-form-item-required">
+                <h6>First Name</h6>
+                <input type="first-name" placeholder="First Name" style="background-color: #EDEFF2;" required="1" />
+              </label>
+          </div>
+          <div>
+            
+              <label for="last-name">
+                <h6>Last Name</h6>
+                <input type="last-name" placeholder="Last Name"  style="background-color: #EDEFF2;" required="1">
+              </label>
+            
+          </div>
+        </section>
+        <div class="form-group" style="margin-left: 70px;margin-top: 60px;">
+            <label for="email">
+                <h6>Email</h6>
+            </label>
+            <input type="email" name="email" placeholder="E-mail" class="form-control" style="background-color: #EDEFF2;width: 400px;" required="1">
+            <span class="help-block"></span>
+        </div>
+           <legend>Payment Information</legend>
+           <label for="credit-card" style="margin-top: -3px;">
+           <h6 style="margin-left: 10%;"> Credit Card</h6>
+           </label>
+           <div id="payment-errors"></div>
+           <div class="form-group" style="width: 500px;border: 1px solid #1d3131;margin-left: 80px;margin-top: 20px;height: 35px;">
+                <!-- Stripe Elements Placeholder -->
+                <div id="card-element" style="margin: 10px 0 30px 0;" class="StripeElement StripeElement--empty">
+                    <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important; --stripeElementWidth: 82px;">
+                        <iframe name="__privateStripeFrame5746" frameborder="0" allowtransparency="true" scrolling="no" role="presentation" allow="payment *" src="https://js.stripe.com/v3/elements-inner-card-74c94b12a3c991276d75d7e7135461e8.html#wait=false&amp;mids[guid]=NA&amp;mids[muid]=471a2728-c4b4-4eb2-99f7-a250c7bdf0cf58a635&amp;mids[sid]=NA&amp;rtl=false&amp;componentName=card&amp;keyMode=live&amp;apiKey=pk_live_51JJqdcEJPTdj0nOdwN7uCZr8WloMJt9xtkP7v5NlKl7KUwKBeUpQDjaAR5W5t8BH37dRVh3u8lU4otYKIzxILqZs001LisZELF&amp;referrer=https%3A%2F%2Fdashboard.wppusher.com%2Fcheckout%3Fplan%3Dprice_1JO1NpEJPTdj0nOdAMsphyOy&amp;controllerId=__privateStripeController5741" title="Secure card payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; transform: translate(0px) !important; color-scheme: light only !important; height: 16.8px;">
+                        </iframe>
+                        <input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: -1px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;">
+                        <div style="display: block !important; position: absolute !important; top: 50% !important; right: -6px !important; width: 0px !important; margin: -16px 0px 0px !important; padding: 0px !important; border: 0px !important; background: none !important; opacity: 1 !important; overflow: hidden !important; height: 32px !important; transition: width 0s ease 0.4s !important;">
+                            <iframe name="cardButton5748" frameborder="0" allowtransparency="true" scrolling="no" src="https://js.stripe.com/v3/elements-inner-link-button-for-card-a06d4d40d90d009417ba1db36e0f9c11.html#locale=en&amp;style[backgroundColor]=&amp;style[foregroundColor]=&amp;frameId=__privateStripeFrame5746&amp;publishableKey=pk_live_51JJqdcEJPTdj0nOdwN7uCZr8WloMJt9xtkP7v5NlKl7KUwKBeUpQDjaAR5W5t8BH37dRVh3u8lU4otYKIzxILqZs001LisZELF&amp;stripeJsId=7e4b95df-2f29-4108-8ea6-ff35bab48992&amp;mids[guid]=NA&amp;mids[muid]=471a2728-c4b4-4eb2-99f7-a250c7bdf0cf58a635&amp;mids[sid]=NA&amp;component=card" style="margin: 0px !important; user-select: none !important; transform: translate(0px) !important; color-scheme: light only !important; display: block !important; position: absolute !important; top: 0px !important; right: 0px !important; height: 32px !important; width: calc(var(--stripeElementWidth) + 12px) !important; padding: 0px !important; border: 0px !important; overflow: hidden !important; opacity: 1 !important; transition: visibility 0s ease 0.4s !important; visibility: hidden !important;" tabindex="-1">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <button>Buy WP Pusher</button>
+            <p style="margin-left: 22%;"><a style="font-weight: bold;">Need any help.</a>Don't hesitate to <a href="https://wppusher.com/support/">contact support</a></p>
+    </form>
+            
+      <form style="width: 250px;height: 795px;margin-top:-48.5%;margin-left: 60%;background-color:#1179BF;color:#ffffff">
+        <tb style="margin-left: 5%;">
+        <p style="margin-top: 12%;font-size: x-large;">FreeLancer</p>
+        <p class="text-center" id="total-sum" style="font-size:500%;margin-left: 25%;margin-top: 0%;">99</p>
+        <h5 style="margin-left: 55%;margin-top: -45%;font-size: 200%;">/year</h5>
+        <p style="margin-top: -45%;margin-left: 17%;font-size: 250%;">
+          $
+        </p>
+        <p style="font-family: lato;margin-top: 30%;font-size: x-large;">
+          Automatically renews <br>afer
+           1 year
+          </p>
+         
+         <ol style="color: #ffffff;margin-left: 3%;margin-top: 25%;">
+          <li>Use on 5 client sites</li><br>
+          <li> Private repositories</li> <br>
+          <li> Email support</li>
+         </ol>
+         <p style="margin-top: 25%;">Need 20 client sites?</p>
+         <p>
+           <a href="https://wppusher.com/agencies/" style="color: #ffffff;">Switch to the Agency Plan
+           </a>
+       </p>
+       <hr style="width: 200px;">
+       <p style="font-style: italic;margin-left: 10%;margin-top: 20%;">FTP is horrible to deal with.
+         <br>
+         <a style="color:#ffffff;font-weight: bold;">
+           WP Pusher
+         </a>
+         solves,that issue,<br>and the customer support is <br>awesome
+       </p>
+        <p><img src="/assignment 3/assests/images/20231023_105843.jpg" style="border-radius: 100%;width: 50px;height:46px;margin-top: 5%;">Joseph Njoku
+         </p>
+        </tb> 
+       
+        </tb>
+      </form>
+    </main>
+  </body>
+</html>
